@@ -1,9 +1,11 @@
 """make.fun entry: Your Week in One Line.
 
 Writes the entry text to /output/entry.txt for the make.fun grader.
+The grader reads exactly that file, so the path is fixed here.
 No network, no secrets, no files outside this repository.
 """
 from pathlib import Path
+# Entry text: one line, at most 100 characters, with a concrete detail.
 ENTRY = 'Built a planet with no tenants, a pattern library with one chart, and a joke the Roomba laughed at.'
 OUTPUT = Path("/output/entry.txt")
 def write_entry() -> Path:
